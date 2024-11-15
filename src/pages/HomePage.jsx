@@ -14,7 +14,7 @@ export default function HomePage() {
           <Button
             variant="secondary"
             size="medium"
-            className="bg-black hover:bg-slate-900"
+            className=""
           >
             Sign Up
           </Button>
