@@ -80,7 +80,7 @@ export default function Login() {
               <p className="text-sm font-light text-gray-500">
                 {"Don't"} have an account?{" "}
                 <Link
-                  to="/login"
+                  to="/register"
                   className="font-medium text-primary-600 hover:underline"
                 >
                   Register here
