@@ -176,7 +176,7 @@ export default function EditProduct() {
                     placeholder=" "
                   />
                   <label className="absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:scale-75 peer-focus:-translate-y-6">
-                    Variation Name
+                    Name
                   </label>
                 </div>
 
@@ -191,7 +191,7 @@ export default function EditProduct() {
                     placeholder=" "
                   />
                   <label className="absolute text-lg text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:scale-75 peer-focus:-translate-y-6">
-                    Variation SKU
+                    SKU
                   </label>
                 </div>
 

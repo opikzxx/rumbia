@@ -3,8 +3,8 @@ import Button from "../components/elements/Button";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-5xl font-bold">Welcome to Rumbia</h1>
+    <div className="flex flex-col items-center justify-center h-screen p-6">
+      <h1 className="text-center text-5xl font-bold">Welcome to Rumbia</h1>
       <p className="text-lg mt-4">The best place to find your dream job</p>
       <div className="flex gap-4 mt-4">
         <Link to="/login">
@@ -14,7 +14,7 @@ export default function HomePage() {
           <Button
             variant="outline"
             size="medium"
-            className="text-slate-800 border-slate-800"
+            className="text-black border-black"
           >
             Sign Up
           </Button>

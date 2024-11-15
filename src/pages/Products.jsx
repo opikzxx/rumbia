@@ -1,38 +1,15 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/elements/Button";
 import ProductCard from "../components/elements/ProductCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Products() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   const [products, setProducts] = useState(() => {
     const savedProducts = localStorage.getItem("products");
     return savedProducts ? JSON.parse(savedProducts) : [];
   });
-
-  useEffect(() => {
-    if (location.state?.newProduct) {
-      setProducts((prevProducts) => {
-        const updatedProducts = [...prevProducts, location.state.newProduct];
-        localStorage.setItem("products", JSON.stringify(updatedProducts));
-        return updatedProducts;
-      });
-    }
-
-    if (location.state?.updatedProduct) {
-      setProducts((prevProducts) => {
-        const updatedProducts = prevProducts.map((product) =>
-          product.id === location.state.updatedProduct.id
-            ? location.state.updatedProduct
-            : product
-        );
-        localStorage.setItem("products", JSON.stringify(updatedProducts));
-        return updatedProducts;
-      });
-    }
-  }, [location.state]); // Only depend on location.state
 
   const handleDeleteProduct = (productId) => {
     setProducts((prevProducts) => {

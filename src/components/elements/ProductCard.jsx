@@ -55,7 +55,7 @@ export default function ProductCard({
           </ul>
         </div>
       )}
-      <div className="flex justify-end gap-2 p-6 mt-auto">
+      <div className="flex justify-center gap-2 p-6 mt-auto">
         <Button
           variant="primary"
           size="small"
