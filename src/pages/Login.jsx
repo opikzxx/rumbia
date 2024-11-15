@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../components/elements/Button";
 import { useUser } from "../components/context/UserContext";
 
@@ -77,6 +77,15 @@ export default function Login() {
               <Button type="submit" variant="primary" className="w-full">
                 Login
               </Button>
+              <p className="text-sm font-light text-gray-500">
+                {"Don't"} have an account?{" "}
+                <Link
+                  to="/login"
+                  className="font-medium text-primary-600 hover:underline"
+                >
+                  Register here
+                </Link>
+              </p>
             </form>
           </div>
         </div>
