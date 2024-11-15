@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/fragments/header";
 import HomePage from "./pages/HomePage";
 import Products from "./pages/Products";
 import AddProduct from "./pages/AddProduct";
@@ -7,6 +6,7 @@ import EditProduct from "./pages/EditProduct";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { UserProvider, useUser } from "./components/context/UserContext";
+import Header from "./components/fragments/Header";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 }
 
 const AppRoutes = () => {
-  const { authedUser } = useUser(); 
+  const { authedUser } = useUser();
 
   return (
     <>
