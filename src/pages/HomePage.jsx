@@ -12,9 +12,9 @@ export default function HomePage() {
         </Link>
         <Link to="/register">
           <Button
-            variant="outline"
+            variant="secondary"
             size="medium"
-            className="text-black border-black"
+            className="bg-slate-200 text-black hover:bg-slate-300"
           >
             Sign Up
           </Button>
